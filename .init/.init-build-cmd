@@ -1,0 +1,4 @@
+{
+    "command": "./gradlew assembleDebug",
+    "working_directory": "/tmp/kavia/workspace/code-generation/crypto-tracker-644240-645409/crypto_tracker_mobile_app"
+}
