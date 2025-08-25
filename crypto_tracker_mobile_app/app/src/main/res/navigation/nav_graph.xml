@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/marketsFragment">
+
+    <fragment
+        android:id="@+id/marketsFragment"
+        android:name="org.example.app.ui.markets.MarketsFragment"
+        android:label="Markets">
+        <action
+            android:id="@+id/action_markets_to_detail"
+            app:destination="@id/coinDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/portfolioFragment"
+        android:name="org.example.app.ui.portfolio.PortfolioFragment"
+        android:label="Portfolio" />
+
+    <fragment
+        android:id="@+id/watchlistFragment"
+        android:name="org.example.app.ui.watchlist.WatchlistFragment"
+        android:label="Watchlist">
+        <action
+            android:id="@+id/action_watchlist_to_detail"
+            app:destination="@id/coinDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="org.example.app.ui.settings.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment
+        android:id="@+id/coinDetailFragment"
+        android:name="org.example.app.ui.detail.CoinDetailFragment"
+        android:label="Coin Detail">
+        <argument
+            android:name="coinId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
